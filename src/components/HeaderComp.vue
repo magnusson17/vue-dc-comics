@@ -34,6 +34,7 @@ export default {
 header {
     @include displayFlex(space-around, center);
     height: 20vh;
+    margin-bottom: 3px;
 }
 
 div {
@@ -55,7 +56,8 @@ ul {
         cursor: pointer;
         &:hover {
             color: blue;
-            box-shadow: 0px 2px blue;
+            //box-shadow: 0px 2px blue;
+            border-bottom: 3px solid blue;
         }
     }
 }

@@ -23,6 +23,8 @@ export default {
 div {
     background-color: blue;
     padding: 50px 0;
+    // position: relative;
+    // top: 50px;
 }
 
 ul {

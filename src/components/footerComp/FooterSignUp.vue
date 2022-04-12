@@ -29,6 +29,8 @@ export default {
 header {
     @include displayFlex(space-around, center);
     background-color: rgb(54, 52, 52);
+    // position: relative;
+    // bottom: 50px;
 }
 
 button {
@@ -37,7 +39,13 @@ button {
     background-color: transparent;
     padding: 10px;
     color: white;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    &:hover {
+        background-color: black;
+    }
 }
+
 ul {
     @include displayFlex(center, center);
     list-style: none;

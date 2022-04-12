@@ -42,7 +42,7 @@
         </div>
     </div>
 
-    <div class="div_container">
+    <div class="div_container_2">
         <img src="../../assets/img/dc-logo-bg.png" alt="dc-logo">
     </div>
 </div>
@@ -59,32 +59,35 @@ export default {
 @import '../../style/mixin.scss';
 
 .main_container {
-    display: flex;
+    @include displayFlex(space-around, center);
     background-image: url("../../assets/img/footer-bg.jpg");
-    height: 30vh;
+    // height: 30vh;
 }
 .div_container {
-    @include displayFlex(center, center);
-    width: 50%;
-}
-.ul_container {
     @include displayFlex(center, start);
-    flex-direction: column;
+    //flex-direction: column;
+    //width: 50%;
 }
+// .ul_container {
+//     @include displayFlex(center, start);
+//     flex-direction: column;
+// }
 ul {
     @include ulReset;
+    font-weight: bold;
     color: white;
     text-transform: uppercase;
     text-align: left;
+    margin: 0 30px 15px 0;
     li {
+        font-weight: normal;
         text-transform: capitalize;
-        color: white;
-        font-size: 0.7em;
+        color: grey;
         text-align: left;
     }
 }
 
-img {
-    height: 120%;
-}
+// img {
+//     height: 100%;
+// }
 </style>
