@@ -36,7 +36,7 @@ ul {
     list-style: none;
     display: flex;
     li {
-        text-align: left;
+        // text-align: left;
         margin: 0 20px;
         font-size: 0.5em;
         &:hover {

@@ -2,18 +2,21 @@
   <div id="app">
     <HeaderComp></HeaderComp>
     <MainComp/>
+    <FooterLinks/>
   </div>
 </template>
 
 <script>
 import HeaderComp from './components/HeaderComp.vue'
 import MainComp from './components/MainComp.vue'
+import FooterLinks from './components/footerComp/FooterLinks.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderComp,
     MainComp,
+    FooterLinks,
   }
 }
 </script>
