@@ -5,16 +5,17 @@
       </div>
       <div>
           <ul>
-              <li>CHARACTERS</li>
-              <li>COMICS</li>
-              <li>MOVIES</li>
-              <li>TV</li>
-              <li>GAMES</li>
-              <li>COLLECTIBLES</li>
-              <li>VIDEOS</li>
-              <li>FANS</li>
-              <li>NEWS</li>
-              <li>SHOP</li>
+              <li>characters</li>
+              <li>comics</li>
+              <li>movies</li>
+              <li>tv</li>
+              <li>games</li>
+              <li>collectibles</li>
+              <li>videos</li>
+              <li>fans</li>
+              <li>news</li>
+              <li>shop</li>
+              <li>characters</li>        
           </ul>
       </div>
   </header>
@@ -36,7 +37,7 @@ ul {
     list-style: none;
     display: flex;
     li {
-        // text-align: left;
+        text-transform: uppercase;
         margin: 0 20px;
         font-size: 0.5em;
         &:hover {
