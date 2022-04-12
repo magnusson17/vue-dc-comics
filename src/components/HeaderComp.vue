@@ -44,7 +44,6 @@ div {
 ul {
     display: flex;
     height: 100%;
-    list-style: none;
     // ul default style reset
     @include ulReset;
     li {
