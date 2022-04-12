@@ -55,30 +55,36 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+@import '../../style/mixin.scss';
+
 .main_container {
     display: flex;
     background-image: url("../../assets/img/footer-bg.jpg");
+    height: 30vh;
 }
 .div_container {
-    display: flex;
+    @include displayFlex(center, center);
     width: 50%;
 }
 .ul_container {
-    display: flex;
+    @include displayFlex(center, start);
     flex-direction: column;
-    align-items: start;
 }
 ul {
-    list-style: none;
+    @include ulReset;
     color: white;
     text-transform: uppercase;
     text-align: left;
     li {
         text-transform: capitalize;
-        margin: 0 20px;
         color: white;
-        font-size: 0.5em;
+        font-size: 0.7em;
         text-align: left;
     }
+}
+
+img {
+    height: 120%;
 }
 </style>
