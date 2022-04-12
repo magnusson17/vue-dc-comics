@@ -45,10 +45,8 @@ ul {
     display: flex;
     height: 100%;
     list-style: none;
-    // azzerare il default style
-    padding-inline-start: 0px;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
+    // ul default style reset
+    @include ulReset;
     li {
         @include displayFlex(center, center);
         height: 100%;
