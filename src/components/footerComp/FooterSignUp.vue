@@ -23,25 +23,29 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+@import '../../style/mixin.scss';
+
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    @include displayFlex(space-around, center);
+    background-color: rgb(54, 52, 52);
 }
 
 button {
     text-transform: uppercase;
+    border: 2px solid blue;
+    background-color: transparent;
+    padding: 10px;
+    color: white;
 }
 ul {
+    @include displayFlex(center, center);
     list-style: none;
-    display: flex;
     li {
         text-transform: uppercase;
-        margin: 0 20px;
-        font-size: 0.5em;
-        &:hover {
-            color: blue;
-        }
+        margin: 0 10px;
+        font-size: 0.7em;
+        color: blue;
     }
 }
 </style>
