@@ -30,18 +30,38 @@ export default {
 <style scoped lang="scss">
 header {
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
+    height: 20vh;
 }
-ul {
-    list-style: none;
+
+div {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+ul {
+    display: flex;
+    height: 100%;
+    list-style: none;
+    // azzerare il default style
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
     li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
         text-transform: uppercase;
         margin: 0 20px;
-        font-size: 0.5em;
+        font-size: 0.7em;
+        cursor: pointer;
         &:hover {
             color: blue;
+            box-shadow: 0px 2px blue;
         }
     }
 }
