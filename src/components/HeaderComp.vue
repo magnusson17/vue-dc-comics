@@ -28,17 +28,16 @@ export default {
 </script>
 
 <style scoped lang="scss">
+// importa mixin
+@import '../style/mixin.scss';
+
 header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include displayFlex(space-around, center);
     height: 20vh;
 }
 
 div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include displayFlex(center, center);
     height: 100%;
 }
 
@@ -51,9 +50,7 @@ ul {
     margin-block-start: 0px;
     margin-block-end: 0px;
     li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include displayFlex(center, center);
         height: 100%;
         text-transform: uppercase;
         margin: 0 20px;
