@@ -23,16 +23,16 @@ export default {
 @import '../style/mixin.scss';
 
 .container {
-  //@include displayFlex(center, center);
-  display: inline-block;
-}
-
-.box {
-    width: 200px;
-    height: 200px;
-    color: white;
-    @include displayFlex(center, center);
-    flex-direction: column;
+    display: flex;
+    flex-basis: calc((100% / 6) - 10px);
+    .box {
+        // aspect-ratio: 1;
+        padding: 10px;
+        color: white;
+        @include displayFlex(center, center);
+        flex-direction: column;
+        text-align: left;
+    }
 }
 
 </style>

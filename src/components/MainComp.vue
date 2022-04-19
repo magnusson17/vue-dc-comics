@@ -112,16 +112,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 @import "../style/mixin.scss";
 
-// .container {
-//   @include displayFlex(center, center);
-// }
-
-.box {
-  width: 200px;
-  height: 200px;
-  background-color: black;
-  color: white;
+.container {
+    background-color: gray;
+    @include displayFlex(center, center);
+    flex-wrap: wrap;
 }
+
+
+// .box {
+  
+// }
 </style>
