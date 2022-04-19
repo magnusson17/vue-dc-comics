@@ -5,11 +5,6 @@
             <img :src="require(`../../assets/img/${element.img}`)" alt="dc-img">
             <span>{{element.title}}</span>
         </li>
-        <!-- <li><img src="../../assets/img/buy-comics-digital-comics.png" alt="dc-img">digital comics</li>
-        <li><img src="../../assets/img/buy-comics-merchandise.png" alt="dc-img">dc merchandise</li>
-        <li><img src="../../assets/img/buy-comics-subscriptions.png" alt="dc-img">subscription</li>
-        <li><img src="../../assets/img/buy-comics-shop-locator.png" alt="dc-img">comic shop locator</li>
-        <li><img src="../../assets/img/buy-dc-power-visa.svg" alt="dc-img">dc power visa</li> -->
     </ul>
 </div>
 </template>

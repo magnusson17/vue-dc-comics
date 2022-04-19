@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <HeaderComp/>
+    <JumbotronComp/>
     <MainComp/>
     <FooterLinks/>
     <FooterJumbo/>
@@ -14,6 +15,7 @@ import MainComp from './components/MainComp.vue'
 import FooterLinks from './components/footerComp/FooterLinks.vue'
 import FooterJumbo from './components/footerComp/FooterJumbo.vue'
 import FooterSignUp from './components/footerComp/FooterSignUp.vue'
+import JumbotronComp from './components/JumbotronComp.vue'
 
 export default {
   name: 'App',
@@ -23,6 +25,7 @@ export default {
     FooterLinks,
     FooterJumbo,
     FooterSignUp,
+    JumbotronComp
   }
 }
 </script>
