@@ -2,7 +2,7 @@
 <div>
     <ul>
         <li v-for="(element, index) in listaLink" :key="index">
-            <img :src="`../../assets/img/${element.img}`" alt="dc-img">
+            <img :src="require(`../../assets/img/${element.img}`)" alt="dc-img">
             <span>{{element.title}}</span>
         </li>
         <!-- <li><img src="../../assets/img/buy-comics-digital-comics.png" alt="dc-img">digital comics</li>
